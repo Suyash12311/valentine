@@ -109,16 +109,7 @@ document.addEventListener("click", () => {
   music.play();
 }, { once: true });
 
-// Image auto change
-let index = 0;
-setInterval(() => {
-  index = (index + 1) % images.length;
-  image.style.opacity = 0;
-  setTimeout(() => {
-    image.src = images[index];
-    image.style.opacity = 1;
-  }, 2000);
-}, 2800);
+
 
 // No button run-away
 noBtn.addEventListener("mouseenter", () => {
@@ -150,6 +141,7 @@ yesBtn.addEventListener("click", () => {
 
 </body>
 </html>
+
 
 
 
