@@ -22,12 +22,12 @@ body {
 }
 
 .image-animate {
-  animation: float 4s ease-in-out infinite;
-  transition: opacity .4s ease;
+  animation: float 6s ease-in-out infinite;
+  transition: opacity .6s ease;
 }
 
 #noBtn {
-  transition: all 0.25s ease;
+  transition: all 1s ease;
 }
 </style>
 </head>
@@ -117,7 +117,7 @@ setInterval(() => {
   setTimeout(() => {
     image.src = images[index];
     image.style.opacity = 1;
-  }, 1000);
+  }, 2000);
 }, 2800);
 
 // No button run-away
@@ -150,6 +150,7 @@ yesBtn.addEventListener("click", () => {
 
 </body>
 </html>
+
 
 
 
