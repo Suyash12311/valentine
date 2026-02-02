@@ -121,22 +121,24 @@ noBtn.addEventListener("mouseenter", () => {
 });
 
 // YES click
+// YES click
 yesBtn.addEventListener("click", () => {
   question.textContent = "YAYYYY!! I KNEW IT 😭💘";
   buttons.style.display = "none";
   finalMessage.classList.remove("hidden");
   spotify.classList.remove("hidden");
 
-  confetti({
-    particleCount: 220,
-    spread: 100,
-    origin: { y: 0.6 }
-  });
-});
+  // --- IMAGE CHANGE LOGIC ---
+  // This picks a random image from your existing 'images' array
+  image.src = "images/image5.jpeg";
+
+        confetti({ particleCount: 220, spread: 100, origin: { y: 0.6 } });
+    });
 </script>
 
 </body>
 </html>
+
 
 
 
